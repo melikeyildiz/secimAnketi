@@ -1,28 +1,3 @@
-function svgturkiyeharitasi() {
-  const element = document.querySelector('#svg-turkiye-haritasi');
-  const info = document.querySelector('.il-isimleri');
-  const totalPoll = document.querySelector('#total-poll'); 
-
-  element.addEventListener(
-    'click',
-    function (event) {
-      if (event.target.tagName === 'path') {
-        const parent = event.target.parentNode;
-        const id = parent.getAttribute('id');
-
-        if (id !== 'guney-kibris') {
-          // Şehre tıklandığında anket div'ini görünür hale getirin
-          totalPoll.style.display = 'block';
-        }
-      }
-    }
-  );
-
-}
-
-
-
-
 
 let poll = {
   question: "Hangi adaya oy vereceksiniz?",
